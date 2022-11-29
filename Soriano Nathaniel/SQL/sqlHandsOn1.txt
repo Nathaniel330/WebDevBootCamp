@@ -1,0 +1,98 @@
+CREATE DATABASE sql_hands_on_1;
+
+
+
+CREATE TABLE department (
+    DeptID int(11),
+    DeptName varchar(100),
+    Location varchar(50)
+);
+
+
+
+INSERT INTO `department`
+(`DeptID`, `DeptName`, `Location`)
+VALUES (1001, 'Executive','BGC')
+
+
+
+ALTER TABLE department
+ADD PRIMARY KEY (DeptID);
+
+
+
+ALTER TABLE department
+MODIFY DeptID int(11) AUTO_INCREMENT;
+
+
+
+INSERT INTO `department`
+(`DeptName`, `Location`)
+VALUES
+('HR', 'Mandaluyong'),
+('IT', 'Bulacan'),
+('Sales', 'Y Ami'),
+('Marketing', 'Jolo')
+
+
+
+CREATE TABLE employee (
+  EmpNo int(11) PRIMARY KEY NOT NULL,
+  EmpName varchar(100) NOT NULL,
+  Job varchar(100) NOT NULL,
+  Mgr int(11),
+  HireDate datetime NOT NULL,
+  Salary decimal(10,0) NOT NULL,
+  Commission int(11),
+  DeptID int(11) NOT NULL,
+  FOREIGN KEY (Mgr) REFERENCES employee(EmpNo),
+  FOREIGN KEY (DeptID) REFERENCES department(DeptID)
+)
+
+
+
+INSERT INTO `employee`
+(`EmpNo`, `EmpName`, `Job`, `HireDate`, `Salary`, `DeptID`)
+VALUES
+(1001, 'Scott', 'President', '1978-01-01', 5000, 1001)
+
+
+
+INSERT INTO `employee`
+(`EmpNo`, `EmpName`, `Job`, `Mgr`, `HireDate`, `Salary`, `DeptID`)
+VALUES
+(1058, 'Clark', 'Manager', 1001, '1978-01-01 00:00:00', 4000, 1001),
+(1059, 'Jeff', 'Manager', 1001, '1978-01-01 00:00:00', 3500, 1002),
+(1060, 'Marko', 'Manager', 1001, '1978-01-01 00:00:00', 4000, 1003),
+(1065, 'Bryan', 'Salesman', 1060, '1979-02-04 00:00:00', 3000, 1002),
+(1066, 'Fraulien', 'Salesman', 1060, '1978-02-08 00:00:00', 4000, 1002),
+(1067, 'Phylip', 'Salesman', 1060, '1978-04-15 00:00:00', 3300, 1002),
+(1068, 'Ejerson', 'Clerk', 1060, '1978-01-15 00:00:00', 2400, 1002),
+(1069, 'Julie', 'Clerk', 1065, '1983-05-12 00:00:00', 2000, 1003),
+(1070, 'Russel', 'Analyst', 1065, '1979-03-01 00:00:00', 3400, 1003),
+(1071, 'Buboy', 'Analyst', 1065, '1979-03-01 00:00:00', 3600, 1003),
+(1072, 'Joseph', 'Analyst', 1065, '1981-01-09 00:00:00', 3100, 1003)
+
+
+
+UPDATE `employee`
+SET `Commission`= 500
+WHERE `EmpName` = "Jeff"
+
+
+
+UPDATE `employee`
+SET `Commission`= 300
+WHERE `EmpName` = "Bryan"
+
+
+
+UPDATE `employee`
+SET `Commission`= 600
+WHERE `EmpName` = "Fraulien"
+
+
+
+UPDATE `employee`
+SET `Commission`= 0
+WHERE `EmpName` = "Phylip"

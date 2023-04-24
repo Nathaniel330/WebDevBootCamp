@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hands On 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>HTML Hands On 2</h2>
+    </div>
+    <div class="part1">
+        <h4>Task 1</h4>
+        <div>
+            <form name="login" id="form1">
+                <label for="username"></label>username:</label>
+                <input type="text" placeholder="user name" name="username" id="userName">
+                <br>
+                <br>
+                <label for="password"></label>password:</label>
+                <input type="password" placeholder="password" name="password" id="password">
+                <br>
+                <br>
+                <input onclick="alertLogSuccess();" type="button" value="Log in">
+            </form>
+        </div>
+        <hr>
+    </div>
+    <div class="part2">
+        <h4>Task 2</h4>
+        <form name="forgot password" id="form2">
+            <label for="old password"></label>old password:</label><br>
+            <input type="password" placeholder="" name="old password" id="oldPassword">
+            <br>
+            <br>
+            <label for="newpassword"></label>new password:</label><br>
+            <input type="password" placeholder="" name="new password" id="newPassword">
+            <br>
+            <br>
+            <input onclick="alertResetSuccess();" type="button" value="Submit">
+        </form>
+        <hr>
+    </div>
+    <div class="part3">
+        <h4>Task 3</h4>
+        <form name="Registration Form" id="form3">
+            <div class="ss-item-required">
+                <label for="old password"></label>First Name:</label>
+                <input type="text" placeholder="First Name" name="first name" id="firstName" required>
+            </div>
+                <br>
+                <br>
+            <div>
+                <label for="middle name"></label>Middle Name:</label>
+                <input type="text" placeholder="Middle Name" name="middle name" id="middleName">
+            </div>
+                <br>
+                <br>
+            <div class="ss-item-required">
+                <label for="last name"></label>Last Name:</label>
+                <input type="text" placeholder="Last Name" name="last name" id="lastName" required>
+            </div>
+                <br>
+                <br>
+            <div class="ss-item-required">
+                <label for="birth date"></label>Date of Birth:</label>
+                <input type="date" placeholder="Date of Birth" name="birth date" id="birthDate" required>
+            </div>
+                <br>
+                <br>
+            <div class="ss-item-required">
+                <label for="email"></label>E-mail:</label>
+                <input type="email" placeholder="E-mail" name="email" id="email" required>
+            </div>
+                <br>
+                <br>
+            <div class="ss-item-required">
+                <label for="contact number"></label>Contact Number:</label>
+                <input type="text" placeholder="Contact Number" name="contact number" id="contactNumber" required>
+            </div>
+                <br>
+                <br>
+            <div>
+                <label for="city"></label>City:</label>
+                <input type="text" name="city" list="cityname">
+                    <datalist id="cityname">
+                        <option value="Manila">
+                        <option value="Dagupan">
+                        <option value="San Carlos">
+                        <option value="Tokyo">
+                        <option value="Singapore">
+                    </datalist> 
+            </div>        
+                <br>
+                <br>
+            <div class="ss-item-required">
+                <p>Preferred Contact Time:</p> <!--Flawed Logic if each checkbox is "required"-->
+                <label for="morning"></label>Morning</label>
+                <input type="checkbox" placeholder="Morning" name="morning" id="preferredMorning"><br>
+                <label for="afternoon"></label>Afternoon</label>
+                <input type="checkbox" placeholder="Afternoon" name="afternoon" id="preferredAfternoon"><br>
+                <label for="evening"></label>Evening</label>
+                <input type="checkbox" placeholder="Evening" name="evening" id="preferredEvening">
+                <br>
+                <br>
+            </div>
+            <div>
+                <input onclick="alertRegisterSuccess();" type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
+<!---->

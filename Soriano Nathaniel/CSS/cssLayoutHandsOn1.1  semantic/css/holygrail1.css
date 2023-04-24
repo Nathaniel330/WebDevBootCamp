@@ -1,0 +1,50 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+
+header {
+    background-color: lightgreen;
+    height: 20vh;
+    padding: 10px;
+}
+
+#flex {
+    display: flex;
+    height: 60vh;
+}
+
+nav {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+article {
+    flex-basis: 60%;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+footer {
+    background-color: lightgreen;
+    height: 20vh;
+    padding: 10px;
+}

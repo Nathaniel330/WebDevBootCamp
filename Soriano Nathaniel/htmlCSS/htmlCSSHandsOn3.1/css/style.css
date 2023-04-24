@@ -1,0 +1,122 @@
+.container {
+    width: 1200px;
+    background-color: white;
+    /* display: flex; wrong... create new division*/
+}
+
+    .header {
+        background-color: blue;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .mid { /*new: try flex*/
+        background-color: white;
+        display: flex;
+    }
+        .sidebar {
+            background-color: orange;
+            flex-basis: 300px;
+            margin: 20px 20px 20px 0px;
+            padding: 10px;
+        }
+
+        .main {
+            background-color: blue;
+            margin: 20px 0px 20px 20px;
+        }
+
+            .mainTop{
+                background-color: blue;
+                display: flex;
+                margin: 20px 20px 20px 35px; 
+            }
+                .mainLeft{
+                    background-color: blue;
+                    flex-basis: 350px;
+                    height: 350px;
+                    margin: 0px 15px 0px 0px; 
+                }
+
+                    .mainTopLeft {
+                        background-color: blueviolet;
+                        padding: 10px;
+                    }
+
+                    .midMiddle {
+                        background-color: blue;
+                        /* display: flex; */
+                        height: 185px;
+                        position: relative;
+                    }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .mainMid1 {
+                            background-color: blue;
+                            /* flex: 1; */
+                            position: absolute;
+                            top: 10px; left: 0; width: 50%; height: 100px;
+                        }
+
+                        .mainMid2 {
+                            background-color: rgb(94, 255, 0);
+                            /* flex: 1; */
+                            position: absolute;
+                            top: 70px; left: 150px; width: 50%; height: 100px;
+                        }
+        
+                .mainTopRight {
+                    background-color: blueviolet;
+                    flex-basis: 800px;
+                    margin: 0px 0px 0px 15px;
+                    display: flex;
+                }
+                    table {
+                        border-collapse: collapse;
+                        width: 100%
+                    }
+                    
+                    th, td {
+                        border: 5px, solid, orange;
+                        text-align: center;
+                        padding: 5px;
+                    }
+
+                    table, th, td {
+                        border: 5px solid orange;
+                        border-collapse: collapse;
+                    }
+
+            .mainBase {
+                background-color: blueviolet;
+                padding: 10px;
+                margin: 20px 20px 20px 35px; 
+            }
+
+                .mainBase1 {
+                    background-color: blue;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+                .mainBase2 {
+                    background-color: blue;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+                
+                .mainBase3 {
+                    background-color: blue;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+    .footer {
+        background-color: blue;
+        padding: 10px;
+    }

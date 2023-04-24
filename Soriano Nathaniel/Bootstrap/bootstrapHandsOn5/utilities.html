@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Utilities</title>
+    <style>
+      .round {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      .square {
+        width: 150px;
+        height: 150px;
+      }
+
+      .test {
+        text-shadow: 0 5px 5px #000000;
+      }
+    </style>
+</head>
+<body  class="p-2 d-flex flex-column min-vh-100">
+  
+  <div class="container-fluid p-3">
+
+    <!--1  VERTICAL ALIGN  -->
+    <div class="bg-danger p-2 mb-5">
+      <img src="./img/MHW-Nergigante_Background.png" class="img-fluid square d-sm-inline-block" alt="spiky boi">
+      <p class="d-none d-sm-inline-block d-md-none fw-bolder display-6"> Vertical Align Utilities</p>
+      <p class="p-1 text-white fw-bold align-top d-md-inline-block col-auto">Vertically align top</p>
+      <p class="p-1 text-white fw-bold align-middle d-md-inline-block col-auto">Vertically align middle</p>
+      <p class="p-1 text-white fw-bold align-bottom d-md-inline-block col-auto">Vertically align bottom</p>
+      <p class="p-1 text-white fw-bold align-middle d-md-inline-block col-auto
+                d-md-none d-lg-inline-block">Vertically align middle</p>
+      <p class="p-1 text-white fw-bold align-top d-sm-block d-md-inline-block col-auto
+                d-md-none d-lg-inline-block">Vertically align top</p>
+    </div>
+
+
+    <!--2  FLEX  -->
+    <div class="bg-dark text-light p-2 mb-5">
+      justify-content-start
+      <div class="bg-secondary p-2 mb-3 d-flex flex-row-reverse flex-md-row justify-content-center justify-content-md-start">
+        <div><img src="./img/MHW-Tobi-Kadachi_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Rathalos_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Nergigante_Background.png" class="img-fluid round" alt=""></div>
+      </div>
+
+      justify-content-center
+      <div class="bg-secondary p-2 mb-3 d-flex justify-content-center">
+        <div><img src="./img/MHW-Nergigante_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Rathalos_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Tobi-Kadachi_Background.png" class="img-fluid round" alt=""></div>
+      </div>
+
+      justify-content-between
+      <div class="bg-secondary p-2 mb-3 d-flex justify-content-center justify-content-md-between">
+        <div><img src="./img/MHW-Nergigante_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Rathalos_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Tobi-Kadachi_Background.png" class="img-fluid round" alt=""></div>
+      </div>
+
+      justify-content-evenly
+      <div class="bg-secondary p-2 mb-3 d-flex justify-content-center justify-content-md-evenly">
+        <div><img src="./img/MHW-Nergigante_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Rathalos_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Tobi-Kadachi_Background.png" class="img-fluid round" alt=""></div>
+      </div>
+
+      justify-content-end
+      <div class="bg-secondary p-2 mb-0 d-flex justify-content-center justify-content-md-end">
+        <div><img src="./img/MHW-Nergigante_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Rathalos_Background.png" class="img-fluid round" alt=""></div>
+        <div><img src="./img/MHW-Tobi-Kadachi_Background.png" class="img-fluid round" alt=""></div>
+      </div>
+    </div>
+
+    <!--2  SIZING and SHADOW  -->
+    <div class="shadow-sm border border-dark text-center text-light p-2">
+      <div class="border border-secondary p-1 mb-1">
+        <div class="bg-dark border border-light w-25">w-25</div>
+        <div class="bg-dark border border-light w-50">w-50</div>
+        <div class="bg-dark border border-light w-75">w-75</div>
+        <div class="bg-dark border border-light w-100">w-100</div>
+        <div class="bg-dark border border-light w-auto">w-auto</div>
+      </div>
+
+      <div style="height: 30vh" class="shadow-md d-flex border border-secondary p-1 mb-1 text-center">
+        <div class="bg-dark border border-light w-25 h-25">h-25</div>
+        <div class="bg-dark border border-light w-25 h-50">h-50</div>
+        <div class="bg-dark border border-light w-25 h-75">h-75</div>
+        <div class="bg-dark border border-light w-25 h-100">h-100</div>
+        <div class="bg-dark border border-light w-auto h-auto">h-auto</div>
+      </div>
+
+      <!--bootstrap shadow barely visible || my eyes are bad-->
+      <div class="shadow-lg border border-secondary d-flex justify-content-evenly align-items-center p-1 text-dark"> 
+        <p class="test">CSS text shadow</p>
+        <p class="shadow-lg">Bootstrap text shadow</p>
+        <img src="./img/MHW-Tobi-Kadachi_Background.png" class="shadow-lg img-fluid round" alt="">
+      </div>
+    </div>
+
+  </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

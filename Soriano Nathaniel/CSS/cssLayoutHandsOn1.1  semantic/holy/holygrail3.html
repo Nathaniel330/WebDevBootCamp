@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail 3</title>
+    <link rel="stylesheet" href="../css/holygrail3.css">
+</head>
+<body>
+    <header><p>HEADER</p></header>
+
+    <div id="flex">  
+        <article><p>ARTICLE</p>
+            <form>
+                <div id="formLeft">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone"><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email"><br><br>
+
+                    <label for="pickup">Pickup Date/Time:</label>
+                    <input type="datetime-local" id="pickup"><br><br>
+
+                    <label for="pickupPlace">Pickup Place:</label>
+                    <input type="text" id="pickupPlace" list="cityname">
+                        <datalist id="cityname">
+                            <option value="Manila">
+                            <option value="Tokyo">
+                            <option value="Seoul">
+                            <option value="Singapore">
+                            <option value="Kuala Lumpur">
+                        </datalist><br><br>
+
+                    <label for="dropoffPlace">Dropoff Place:</label>
+                    <input type="text" id="dropoffPlace" list="cityname">
+                        <datalist id="cityname">
+                            <option value="Manila">
+                            <option value="Tokyo">
+                            <option value="Seoul">
+                            <option value="Singapore">
+                            <option value="Kuala Lumpur">
+                        </datalist><br><br>
+
+                    <button>Submit Booking</button>
+                </div>
+
+                <div id="formRight">
+                <p>Which vehicle do you require?</p>
+                    <input type="radio" id="van" name="vehicle" value="Van">
+                    <label for="van">Van</label><br>
+                    <input type="radio" id="jeepney" name="vehicle" value="Jeepney">
+                    <label for="jeepney">Jeepney</label><br>
+                    <input type="radio" id="tri" name="vehicle" value="Tricycle">
+                    <label for="tri">Tricycle</label><br><br>
+
+                <p>Extras:</p>
+                <input type="radio" id="babySeat" name="extra" value="Baby Seat">
+                <label for="babySeat">Baby Seat</label><br>
+                <input type="radio" id="wheelChair" name="extra" value="Wheelchair Access">
+                <label for="wheelChair">Wheelchair Access</label><br>
+                <input type="radio" id="tip" name="extra" value="Stock Tip">
+                <label for="tip">Stock Tip</label><br>
+                </div>
+
+            </form>
+
+        </article>
+        <aside><p>ASIDE</p></aside>
+        <nav>
+            <p>NAV</p><br>
+            <ul>
+                <li><a href="../index.html">Home</a></li><br>
+                <li><a href="holygrail1.html">Holy Grail #1</a></li><br>
+                <li><a href="holygrail2.html">Holy Grail #2</a></li><br>
+               
+            </ul>
+        </nav>
+    </div>
+
+    <footer><p>FOOTER</p></footer>
+</body>
+</html>

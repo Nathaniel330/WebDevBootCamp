@@ -1,0 +1,33 @@
+body {
+    background-color: #7a918d;
+}
+.header {
+    border: 2px solid black;
+    background-color: #dbfeb8;
+    padding: 5px;
+    margin: 5px;
+}
+
+.part1 {
+    border: 2px solid black;
+    background-color: #c5edac;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.part2 {
+    border: 2px solid black;
+    background-color: #99c2a2;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.part3 {
+    border: 2px solid black;
+    background-color: #93b1a7;
+    padding: 5px;
+    margin: 5px;
+
+}

@@ -1,0 +1,145 @@
+#container {
+    width: max-content;
+    padding: 10px 10px 100px 10px;
+    background-color: rgb(32, 35, 35);
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+#group p {
+    display: inline-block;
+    text-align:center;
+    border: solid rgb(32, 35, 35);      /*please match with background color*/
+    color: white;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#group {
+    margin-bottom: none;
+}
+
+#main {
+    margin-top: none;
+}
+
+#main div {
+    display: inline-block;
+}
+
+#main p, #base p {
+   text-align:center;
+   /* border: solid black; */
+   width: 100px;
+}
+
+#period p {                                     
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border: solid rgb(32, 35, 35);       /*please match with background color*/
+}
+
+#base p {
+    display: inline-block;
+}
+
+#base .hideBorder {         
+    border: solid rgb(32, 35, 35);       /*please match with background color*/
+    margin-right: -4px;
+}
+
+/*coloring periodic element by group (family)*/
+
+.alkaliMetals p {
+    border: solid red;
+    color: red;
+}
+
+.nonMetal:nth-child(1n) {
+    border: solid skyblue;
+    color: skyblue;
+}
+
+/*does not include Hydrogen. so nth child was an attempt to fix the mess.*/
+/* .nonMetal{   
+    border: solid orange;
+    color: orange;
+} */
+
+.alkaliEarthMetals p {
+    border: solid orange;
+    color: orange;
+}
+
+.transitionMetals p {
+    border: solid yellow;
+    color: yellow;
+}
+
+.basicMetal {
+    border: solid lightgreen;
+    color:  lightgreen;
+}
+
+.semiMetal {
+    border: solid rgb(20, 249, 241);
+    color: rgb(20, 249, 241);
+}
+
+.halogens p {
+    border: solid peachpuff;
+    color: peachpuff;
+}
+
+.nobleGases p {
+    border: solid violet;
+    color: violet;
+}
+
+.lanthanoids p {
+    border: solid rgb(39, 156, 214);
+    color: rgb(39, 156, 214);
+}
+
+.lanthanoids:nth-child(1n) {
+    border: solid rgb(39, 156, 214);
+    color: rgb(39, 156, 214);
+}
+
+
+.actinoids p {
+    border: solid rgb(207, 220, 227);
+    color: rgb(207, 220, 227);
+
+}
+
+.actinoids:nth-child(1n) {
+    border: solid rgb(207, 220, 227);
+    color: rgb(207, 220, 227);
+
+}
+
+
+
+
+/*this block of code when removed, destroys the alignment of the nonmetal family 😵😵*/
+/*probably because of the nth child situation. not sure*/
+p {
+    border: solid yellow;
+    color: yellow;
+
+}

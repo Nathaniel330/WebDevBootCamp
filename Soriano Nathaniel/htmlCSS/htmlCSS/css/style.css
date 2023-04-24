@@ -1,0 +1,17 @@
+img{
+    width: 75px;
+    height: 75px;
+}
+span{
+    font-weight: bold;
+    color: red;
+}
+body{
+    background-color: rgb(158, 197, 163);
+}
+table, th,tr,td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+}
